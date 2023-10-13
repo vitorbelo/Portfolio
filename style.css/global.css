@@ -1,5 +1,6 @@
 @import url(./user.css);
 @import url(./social.css);
+@import url(./about.css);
 
 *   {
     margin: 0;
@@ -51,4 +52,9 @@ body {
     border-radius: 12px;
     background: var(--background-card);
 
+}
+
+.subtitle{
+    font-size: 28px;
+    font-weight: 600;
 }

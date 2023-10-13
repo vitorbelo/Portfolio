@@ -1,3 +1,6 @@
+@import url(./user.css);
+@import url(./social.css);
+
 *   {
     margin: 0;
     padding: 0;
@@ -38,10 +41,6 @@ body {
     max-width: 1366px;
     padding: 24px;
     margin: 160px auto 100px;
-}
-
-section{
-    height: 400px;
 }
 
 .projects{

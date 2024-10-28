@@ -50,6 +50,12 @@
 
 }
 
+.project p{
+    text-align: center;
+    font-size: 13px;
+    color: rgb(156, 156, 156);
+}
+
 .project div{
     display: flex;
     gap: 4px;

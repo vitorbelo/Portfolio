@@ -3,13 +3,13 @@
 @import url(./about.css);
 @import url(./projets.css);
 
-*   {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --main-color: #647bff;
     --body-color: #090a1a;
     --container-color: #171b3c;
@@ -35,9 +35,9 @@ body {
     font: 400 16px "Inter", sans;
 }
 
-.app{
+.app {
     display: grid;
-    grid-template-columns: 460px 1fr;
+    grid-template-columns: 1fr; /* Ajustado para ser responsivo */
     gap: 48px;
     width: 100%;
     max-width: 1366px;
@@ -45,13 +45,58 @@ body {
     margin: 160px auto 100px;
 }
 
+/* Estilo para cards */
 .card {
     border-radius: 12px;
     background: var(--background-card);
-
+    box-shadow: var(--shadow-card); /* Adiciona sombra ao card */
 }
 
-.subtitle{
+/* Estilo para subtítulos */
+.subtitle {
     font-size: 28px;
     font-weight: 600;
+}
+
+/* Imagens Responsivas */
+img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Serviços */
+.services__content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Projeto */
+.project__content {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os projetos se ajustem em linhas */
+    gap: 20px; /* Espaçamento entre os projetos */
+}
+
+.project {
+    flex: 1 1 calc(33.333% - 20px); /* Tenta ocupar um terço do espaço disponível */
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .app {
+        grid-template-columns: 1fr; /* Para telas menores, usa uma coluna */
+    }
+
+    .project {
+        flex: 1 1 calc(50% - 20px); /* Em telas menores, 2 projetos por linha */
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        flex: 1 1 100%; /* Em telas muito pequenas, 1 projeto por linha */
+    }
 }

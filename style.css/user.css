@@ -36,3 +36,42 @@
     font-size: 18px;
     font-weight: 300;
 }
+
+.user .social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user .social__link {
+    color: #000; 
+    margin-bottom: 10px; 
+}
+
+.curriculo__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%; /* O botão ocupará toda a largura do contêiner */
+    justify-content: center; /* Centraliza o texto e o ícone */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+}
+
+.curriculo__link:hover{
+    transition: .3s;
+    background-color: #439cfa;
+}
+
+.curriculo__link i {
+    margin-left: 6px; /* Espaçamento entre o ícone e o texto */
+}
+
+.curriculo__text {
+    font-size: 14px; /* Ajuste o tamanho do texto conforme necessário */
+}
